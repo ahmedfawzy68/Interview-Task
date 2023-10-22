@@ -1,0 +1,154 @@
+nav {
+    background-color: #7A7DAA;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgb(122, 125, 170);
+    box-shadow: 0 0 0 0.25rem rgba(122, 125, 170, 0.35);
+}
+
+.sort-by {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #807f7f;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.form-select {
+    padding-left: 35px;
+}
+
+.select-i i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 0;
+    width: 20%;
+}
+
+.inbox {
+    min-height: calc(100vh - 176.5px);
+}
+
+.side-bar {
+    background-color: #202529;
+    color: rgb(224, 225, 228);
+    padding: 25px 15px;
+    min-height: calc(100vh - 176.5px);
+}
+
+.side-bar .links {
+    border-bottom: 1px solid rgba(224, 225, 228, 0.3);
+}
+
+.side-bar a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* <accordion> */
+.accordion .accordion-item {
+    border: none;
+    background-color: #202529;
+    color: #807f7f;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #807f7f;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* </accordion> */
+
+.main-inbox {
+    color: #787474;
+    font-weight: 700;
+}

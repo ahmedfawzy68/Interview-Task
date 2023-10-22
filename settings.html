@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-grip me-4"></i> Settings</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">General Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Users & Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Translations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technical</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-bug"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-comments"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-clock"></i></a>
+                    </li>
+                    <li class="nav-item dropdown ms-lg-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="Assets/imgs/user.png" class="me-2" width="25px" alt="profile"> Administrator
+                            (Equina)
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">page1</a></li>
+                            <li><a class="dropdown-item" href="#">Page 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="save py-3">
+        <div class="d-flex justify-content-between px-4">
+            <div>
+                <h4 class="mb-3">Settings</h4>
+                <button class="main-btn me-2 mb-2">Save</button>
+                <button class="mb-2">Discard</button>
+            </div>
+            <div class="w-50">
+                <form>
+                    <div class="input-container mb-2">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass-minus"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="inbox">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 col-lg-2 side-bar">
+                    <div class="links">
+                        <a><img src="Assets/imgs/settings.jpeg" class="me-2" width="20px" alt="gear"> General
+                            Settings</a>
+                        <a><img src="Assets/imgs/sales.jpeg" class="me-2" width="20px" alt="economy"> Sales</a>
+                        <a><img src="Assets/imgs/web.jpeg" class="me-2" width="20px" alt="web"> Websites</a>
+                        <a><img src="Assets/imgs/cart.jpeg" class="me-2" width="20px" alt="cart"> Purchase</a>
+                        <a><img src="Assets/imgs/inventory.jpeg" class="me-2" width="20px" alt="inventory">
+                            Inventory</a>
+                        <a><img src="Assets/imgs/invoicing.jpeg" class="me-2" width="20px" alt="inventory">
+                            Invoicing</a>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-10 mt-3 px-0">
+                    <div class="group mb-4">
+                        <div class="title px-4 py-1 mb-3">
+                            <h5>Users</h5>
+                        </div>
+                        <div class="content px-lg-5">
+                            <div class="d-flex justify-content-between new-line">
+                                <div class="border-left ps-3 mb-3">
+                                    <h6><i class="fa-solid fa-users me-2"></i> 3 Active Users</h6>
+                                    <a class="ms-2" href="#"><i class="fa-solid fa-arrow-right me-2"></i> Manage
+                                        Users</a>
+                                </div>
+                                <div class="w-50 px-3 mb-3">
+                                    <h6>Invite New Users</h6>
+                                    <form class="d-flex">
+                                        <input type="email" placeholder="Enter email address"
+                                            class="form-control me-2 w-50">
+                                        <button class="main-btn">Invite</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group mb-4">
+                        <div class="title px-4 py-1 mb-3">
+                            <h5>Companies</h5>
+                        </div>
+                        <div class="content px-lg-5">
+                            <div class="d-flex justify-content-between new-line">
+                                <div class="border-left ps-3 mb-3">
+                                    <h6>My Company</h6>
+                                    <p>Egypt</p>
+                                    <a class="ms-2" href="#"><i class="fa-solid fa-arrow-right me-2"></i> Manage
+                                        Users</a>
+                                </div>
+                                <div class="w-50 border-left ps-3 mb-3">
+                                    <h6>1 Companies</h6>
+                                    <a class="ms-2" href="#"><i class="fa-solid fa-arrow-right me-2"></i> Manage
+                                        Companies</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group mb-4">
+                        <div class="title px-4 py-1 mb-3">
+                            <h5>Languages</h5>
+                        </div>
+                        <div class="content px-lg-5">
+                            <div class="border-left ps-3">
+                                <h6>1 Languages</h6>
+                                <a class="ms-2" href="#"><i class="fa-solid fa-arrow-right me-2"></i> Manage
+                                    Languages</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group mb-4">
+                        <div class="title px-4 py-1 mb-3">
+                            <h5>Business Documents</h5>
+                        </div>
+                        <div class="content px-lg-5">
+                            <div class="d-flex justify-content-between new-line">
+                                <div class="border-left ps-3 mb-3">
+                                    <h6>Format <i class="fa-solid fa-calculator ms-2"></i></h6>
+                                    <p>Set the paper format of printed documents</p>
+                                    <div class="d-flex align-items-center gap-5">
+                                        <div>
+                                            <h6>Format</h6>
+                                        </div>
+                                        <div class="w-75">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>A4</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-50 border-left ps-3 mb-3">
+                                    <h6>Document Layout <i class="fa-solid fa-calculator ms-2"></i></h6>
+                                    <p>Choose the layout of your documents</p>
+                                    <div class="d-flex align-items-center gap-5 mb-4">
+                                        <div>
+                                            <h6>Layout</h6>
+                                        </div>
+                                        <div class="w-50">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected></option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <a class="ms-2" href="#"><i class="fa-solid fa-arrow-right me-2"></i>Configure
+                                        Document Layout</a>
+                                    <a class="ms-2" href="#">Edit Layout</a>
+                                    <a class="ms-2" href="#">Preview Document</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

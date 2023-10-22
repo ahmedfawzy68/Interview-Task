@@ -1,0 +1,204 @@
+body {
+    background-color: #EAEDF6;
+}
+
+nav:first-child {
+    background-color: #133670;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #A557BC !important;
+}
+
+.dashboard {
+    background: linear-gradient(to right, #A557BC 0, #6686C0 80%, #6686C0 100%);
+    color: white !important;
+    border-radius: 10px;
+}
+
+
+.toggle-switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-switch-container span:first-child {
+    font-weight: 700;
+    color: #000;
+}
+
+.toggle-switch-container span:last-child {
+    font-weight: 700;
+    color: #666;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.toggle-switch input:checked+.toggle-switch-slider {
+    background-color: #A557BC;
+}
+
+.toggle-switch input:checked+.toggle-switch-slider:before {
+    transform: translateX(20px);
+}
+
+.btn {
+    background: linear-gradient(to right, #6686C0 0, #A557BC 80%, #A557BC 100%);
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.box {
+    border: 1px solid #A557BC;
+    border-radius: 12px;
+    position: relative;
+    height: 495.5px;
+}
+
+.box-header {
+    padding: 30px;
+    background: linear-gradient(to right, #A557BC 0, #6686C0 80%, #6686C0 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+
+.box-body {
+    padding: 30px;
+}
+
+sub {
+    vertical-align: super;
+    font-size: small;
+}
+
+.box-body button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: #A557BC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+
+.box-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.box-body ul li {
+    vertical-align: middle;
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.box-body ul li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0.375em;
+    width: 1.30em;
+    height: 1.30em;
+    margin-right: 0.5em;
+    border: 1px solid #A557BC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1em;
+    background-color: #A557BC;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.title-after::after {
+    content: 'Monthly Package';
+    font-size: 12px;
+    color: rgb(216, 205, 205);
+    display: block;
+    margin-top: 5px;
+}
+
+.subtitle-after::after {
+    content: 'Billed Quarterly';
+    font-size: 12px;
+    color: rgb(216, 205, 205);
+    display: block;
+    margin-top: 17px;
+}
+
+.soon-box {
+    border: none;
+    background-color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    opacity: 0.6;
+}
+
+.soon-header {
+    background: #e7e7ee;
+    color: #000;
+}
+
+.title-after::after {
+    color: #aaa;
+}
+
+.subtitle-after::after {
+    color: #aaa;
+}
+
+.soon-btn{
+    background-color: transparent !important;
+    color: #bcbcbc !important;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: default !important;
+}

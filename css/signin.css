@@ -1,0 +1,42 @@
+nav a {
+    color: #666 !important;
+}
+
+.navbar .nav-link.active {
+    font-weight: 700;
+}
+
+.signin button {
+    background-color: teal;
+    padding: 6px 12px;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+footer h3 a {
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: teal;
+    box-shadow: 0 0 0 0.25rem rgba(0, 128, 128, 0.25);
+}
+
+p i {
+    color: teal;
+}
+
+@media only screen and (max-width: 800px) {
+    .signin {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .signin {
+        width: 100% !important;
+    }
+}

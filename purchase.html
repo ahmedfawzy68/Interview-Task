@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/purchase.css">
+</head>
+
+<body>
+    <nav class="text-center text-white py-3">
+        Coming Soon <a class="text-white" href="#">equinaSHOP</a> "Now you can but all your equestrian needs".
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Assets/imgs/logo.png" class="w-50" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Sign Out</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link dashboard px-3 mt-lg-0 mt-2" href="#">View Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="purchase mt-4">
+        <h2 class="text-center">Choose The Right Plan For Your Business</h2>
+        <div class="toggle-switch-container mt-4">
+            <span class="toggle-switch-label me-2">Quarterly</span>
+            <label class="toggle-switch">
+                <input onchange="toggle(this)" type="checkbox">
+                <span class="toggle-switch-slider"></span>
+            </label>
+            <span class="toggle-switch-label ms-2">Yearly</span>
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn">20% save</button>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h2>equinaLIVERY</h2>
+                            </div>
+                            <div>
+                                <h2>$10 <sub>Per Horse</sub></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <ul>
+                            <li>Shop of Shops</li>
+                            <li>Digitalize your Shop</li>
+                            <li>Increase Your Sales</li>
+                            <li>Market your items to all our Member</li>
+                            <li>Get instantaneous Exposure</li>
+                            <li>Digital Payments</li>
+                        </ul>
+                        <button class="mt-5">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h2 class="title-after">equinaLIVERY</h2>
+                            </div>
+                            <div>
+                                <h2 class="subtitle-after">$180 <sub>Per Month</sub></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <ul>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <li>CLUB Dashboards</li>
+                                    <li>Memberships</li>
+                                    <li>Lesson MarketPlace</li>
+                                    <li>Digital Payments</li>
+                                    <li>Mobile-APP B2C</li>
+                                    <li>Horses & Livery</li>
+                                </div>
+                                <div>
+                                    <li>Calendar</li>
+                                    <li>Bookings</li>
+                                    <li>Payments</li>
+                                    <li>Reminders</li>
+                                    <li>Cancelations</li>
+                                </div>
+                            </div>
+                        </ul>
+                        <button class="mt-5">90 Days Free Trial</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="box soon-box">
+                    <div class="box-header soon-header">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h2 class="title-after soon-title-after">equinaLIVERY</h2>
+                            </div>
+                            <div>
+                                <h2 class="subtitle-after soon-subtitle-after">$200 <sub>Per Month</sub></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body soon-body">
+                        <ul>
+                            <li>Shop of Shops</li>
+                            <li>Digitalize your Shop</li>
+                            <li>Increase Your Sales</li>
+                            <li>Market your items to all our Member</li>
+                            <li>Get instantaneous Exposure</li>
+                            <li>Digital Payments</li>
+                        </ul>
+                        <button class="mt-5 soon-btn">Soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/purchase.js"></script>
+</body>
+
+</html>
